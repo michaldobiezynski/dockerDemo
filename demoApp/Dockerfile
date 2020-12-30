@@ -1,5 +1,7 @@
 #Use an existing docker image as a base
-FROM alpine
+FROM node:alpine
+
+WORKDIR /usr/app
 
 #Download and install a dependency
 RUN npm install
