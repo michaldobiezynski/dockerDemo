@@ -4,6 +4,7 @@ FROM node:alpine
 WORKDIR /usr/app
 
 #Download and install a dependency
+COPY ./ ./
 RUN npm install
 
 #Tell the image what to do when it starts as a container
